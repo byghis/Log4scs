@@ -1,0 +1,1612 @@
+ATTENTION: Using the SCS_HOME system variable as /opt/scs-deploysystem
+  [DEPLOY VERBOSE] WARNING:     Reseting the ../deployer/Deployer_1-repositories.cache because we got an error loading it :   cannot open ../deployer/Deployer_1-repositories.cache: No such file or directory
+  [DEPLOY VERBOSE] INFO:        Loading the host description /opt/scs-deploysystem/src/lua/scs/deployer/hosts//machine0.lua
+  [DEPLOY VERBOSE] INFO:        Loading the host description /opt/scs-deploysystem/src/lua/scs/deployer/hosts//machine1.lua
+  [DEPLOY VERBOSE] INFO:        Loading the host description /opt/scs-deploysystem/src/lua/scs/deployer/hosts//machine2.lua
+[dispatcher]  object { --[[table:A]]
+                all_plans_servants = { --[[table:B]] },
+                nickname = "Deployer_1",
+                cache = { --[[table:C]] ... },
+                all_plans = { --[[table:D]] },
+                host_dir = "/opt/scs-deploysystem/src/lua/scs/deployer/hosts/",
+                all_hosts = { --[[table:E]] ... },
+                persistent_storage = "../deployer/Deployer_1-repositories.cache",
+              } registered with key Deployer_1
+  [SCS VERBOSE] Utils::UpdateConfig : called with       function: 0x80a4098     table: 0x80a2100        table: 0x80a8760
+  [SCS VERBOSE] Utils::UpdateConfig : loading manifest
+  [SCS VERBOSE] ERROR: Unable to update the manifest, more.. Failed loading manifest for /tmp/luarocksrepository/rocks
+[dispatcher]  object { --[[table:F]] } registered with key Packager_1
+[acceptor]    accept all requests from channel { --[[table:G]]
+                ServantIndexer = { --[[table:H]] ... },
+                ClientChannels = { --[[table:I]] ... },
+                host = "*",
+                port = 2500,
+                ProxyIndexer = { --[[table:J]] ... },
+                ServerChannels = { --[[table:K]] ... },
+                ObjectReferrer = { --[[table:L]] ... },
+                types = { --[[table:M]] ... },
+                RequestListener = { --[[table:N]] ... },
+                IIOPProfiler = { --[[table:O]] ... },
+                OperationInvoker = { --[[table:P]] ... },
+                RequestReceiver = { --[[table:Q]] ... },
+                BasicSystem = { --[[table:R]] ... },
+                ObjectProxies = { --[[table:S]] ... },
+                flavor = "corba;typed;cooperative;base",
+                ServerBroker = { --[[table:T]] ... },
+                RequestDispatcher = { --[[table:U]] ... },
+                ValueEncoder = { --[[table:V]] ... },
+                ClientBroker = { --[[table:W]] ... },
+                TypeRepository = { --[[table:X]] ... },
+                OperationRequester = { --[[table:Y]] ... },
+                tcpoptions = { --[[table:Z]] ... },
+                MessageMarshaler = { --[[table:AB]] ... },
+              }
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+-------   
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for create_plan
+[dispatcher]  dispatching operation Deployer_1:create_plan()
+[dispatcher]  object { --[[table:BB]]
+                nickname = "Deployer_1.Plan_1",
+                all_nodes_servants = { --[[table:CB]] },
+                all_nodes = { --[[table:DB]] },
+                usage_info = { --[[table:EB]] ... },
+                all_containers = { --[[table:FB]] },
+                all_repositories = { --[[table:GB]] },
+                all_hosts_servants = { --[[table:HB]] },
+                all_components_servants = { --[[table:IB]] },
+                admin = false,
+                manager = { --[[table:A]] ... },
+                all_containers_servants = { --[[table:JB]] },
+                all_components = { --[[table:KB]] },
+                all_repositories_servants = { --[[table:LB]] },
+              } registered with key Deployer_1.Plan_1
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+[listen]      get request from channel
+[message]       receive message
+[listen]      get request from channel
+[message]       receive message
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+[message]       got message Request
+[listen]        got request 1 for mark_as_admin
+[dispatcher]  dispatching operation Deployer_1.Plan_1:mark_as_admin(true)
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for create_repository
+[dispatcher]  dispatching operation Deployer_1.Plan_1:create_repository()
+[dispatcher]  object { --[[table:MB]]
+                description = { --[[table:NB]] ... },
+                componentTemplates = { --[[table:OB]] },
+                properties = { --[[table:PB]] },
+                packages = { --[[table:QB]] },
+                handle = false,
+                nickname = "Deployer_1.Plan_1.RepositoryEntity_1",
+                connections = { --[[table:RB]] },
+                deploying_connections = false,
+                id = { --[[table:SB]] ... },
+                plan = { --[[table:BB]] ... },
+                servant = false,
+                deployed = false,
+                args = false,
+                all_connections = { --[[table:TB]] },
+                proxies = { --[[table:UB]] ... },
+                private = true,
+                deployed_connections = { --[[table:VB]] },
+              } registered with key Deployer_1.Plan_1.RepositoryEntity_1
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for set_host
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:set_host({ --[[table:WB]]
+                port = 10000,
+                name = "machine0",
+                languages = { --[[table:XB]] ... },
+                resources = { --[[table:YB]] ... },
+                ip = "127.0.0.1",
+              })
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for set_privacy
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:set_privacy(false)
+  [DEPLOY VERBOSE]      RepositoryEntity warns its plan that he's public!
+  [DEPLOY VERBOSE] DEBUG:       Adding the repository Deployer_1.Plan_1.RepositoryEntity_1 from public list.
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for get_nickname
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:get_nickname()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for deploy
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:deploy()
+[proxies]     new proxy to { --[[table:ZB]]
+                type_id = "",
+                profiles = { --[[table:AC]] ... },
+              }
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+  [DEPLOY VERBOSE] DEBUG:       Repository not running so starting up the repository daemon remotely through the SSH protocol.
+edward@127.0.0.1's password: 
+[proxies]     new proxy to { --[[table:BC]]
+                type_id = "",
+                profiles = { --[[table:CC]] ... },
+              }
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to getFacetByName("IReceptacles")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:DC]]
+                      type_id = "IDL:scs/core/IReceptacles:1.0",
+                      profiles = { --[[table:EC]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:DC]]
+                type_id = "IDL:scs/core/IReceptacles:1.0",
+                profiles = { --[[table:EC]] ... },
+              }
+[proxies]     call to getFacetByName("IMetaInterface")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:FC]]
+                      type_id = "IDL:scs/core/IMetaInterface:1.0",
+                      profiles = { --[[table:GC]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:FC]]
+                type_id = "IDL:scs/core/IMetaInterface:1.0",
+                profiles = { --[[table:GC]] ... },
+              }
+[proxies]     call to getFacetByName("ComponentRepository")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:HC]]
+                      type_id = "IDL:scs/repository/ComponentRepository:1.0",
+                      profiles = { --[[table:IC]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:HC]]
+                type_id = "IDL:scs/repository/ComponentRepository:1.0",
+                profiles = { --[[table:IC]] ... },
+              }
+[proxies]     call to startup()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'startup'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]      RepositoryEntity deployed!
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message Request
+[listen]        got request 1 for activate
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:activate()
+[proxies]     call to startup()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'startup'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message nil
+[message]       got message nil
+=================
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for get_public_repositories
+[dispatcher]  dispatching operation Deployer_1:get_public_repositories()
+  [DEPLOY VERBOSE] DEBUG:       Testing the reference persisted for the repository 127.0.0.1:10001
+[proxies]     new proxy to { --[[table:JC]]
+                type_id = "IDL:scs/deployer/RepositoryEntity:1.0",
+                profiles = { --[[table:KC]] ... },
+              }
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for _non_existent
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:_non_existent()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message Request
+[listen]        got request 1 for create_from_dir
+[dispatcher]  dispatching operation Packager_1:create_from_dir("/opt/scs-deploysystem/src/lua/scs/demos/hello//hello-1.0-0.rockspec", "/opt/scs-deploysystem/src/lua/scs/demos/hello/")
+  [SCS VERBOSE] Packager::create_from_dir : The Rockspec is a valid for LuaRocks!
+  [SCS VERBOSE] Packager::create_from_dir : The Rockspec is a valid for the deployment tool also!
+Updating manifest for /tmp/luarocksrepository/rocks
+No existing manifest. Attempting to rebuild...
+  adding: conf/ (stored 0%)
+  adding: conf/hello.template (deflated 57%)
+  adding: conf/hello.lua.all.desc (deflated 53%)
+  adding: hello-1.0-0.rockspec (deflated 43%)
+  adding: idl/ (stored 0%)
+  adding: idl/hello.idl (deflated 36%)
+  adding: lua/ (stored 0%)
+  adding: lua/scs/ (stored 0%)
+  adding: lua/scs/demos/ (stored 0%)
+  adding: lua/scs/demos/hello/ (stored 0%)
+  adding: lua/scs/demos/hello/Hello.lua (deflated 48%)
+  adding: lua/scs/demos/hello/HelloFactory.lua (deflated 55%)
+  [SCS VERBOSE] Packager::create_from_dir : Loading the implementation descriptions from the directory: /opt/scs-deploysystem/src/lua/scs/demos/hello//conf
+  [SCS VERBOSE] Packager::create_from_dir : Implementation description loaded successfully.
+  [SCS VERBOSE] Packager::create_from_dir : Template description loaded successfully.
+  [SCS VERBOSE] Packager::create_from_dir : New binary rock created '/opt/scs-deploysystem/src/lua/scs/demos/deployer/hello-1.0-0.all.rock'
+Checking stability of dependencies on the absence of
+hello 1.0-0...
+
+Removing hello 1.0-0...
+  [SCS VERBOSE] Packager::list_temp_repository : Searching for packages in the repository       /tmp/luarocksrepository
+  [SCS VERBOSE] Packager::create_from_dir : Other packages installed during the packaging procedure 
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for publish_pkg
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:publish_pkg({ --[[table:LC]]
+                info = { --[[table:MC]] ... },
+                file = "PK\
+[------- start: CODE ALIEN -------- ]
+\000\000\000\000\000kQy=\000\000\000\000\000\000\000\000\000\000\000\000\000\000conf/UT \000iR�iR�Ux\000��PK\000\000\00\000kQy=&��\000\000\000�\000\000\000\000conf/hello.templateUT   \000iR�iR�Ux\000
+[------- C]ODE ALIEN -------- ]
+aded by Deployer just in deploy time!")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'upload'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]      Uploaded in ComponentRepository the component 'Hello-1.0-0' for 'lua' and 'all' sucessfully!
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for publish_desc
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:publish_desc({ --[[table:NC]]
+                id = { --[[table:OC]] ... },
+                receptacles = { --[[table:PC]] ... },
+                facets = { --[[table:QC]] ... },
+              })
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for create_from_dir
+[dispatcher]  dispatching operation Packager_1:create_from_dir("/opt/scs-deploysystem/src/java/scs/demos/helloworld//hello-1.0-0.rockspec", "/opt/scs-deploysystem/src/java/scs/demos/helloworld/")
+  [SCS VERBOSE] Packager::create_from_dir : The Rockspec is a valid for LuaRocks!
+  [SCS VERBOSE] Packager::create_from_dir : The Rockspec is a valid for the deployment tool also!
+Buildfile: build.xml
+
+clean:
+   [delete] Deleting directory /opt/scs-deploysystem/classes
+
+idl-hello:
+    [mkdir] Created dir: /opt/scs-deploysystem/classes
+   [jacidl] scan file: /opt/scs-deploysystem/idl/hello.idl
+   [jacidl] processing idl file: /opt/scs-deploysystem/idl/hello.idl
+    [javac] Compiling 7 source files to /opt/scs-deploysystem/classes
+    [javac] Note: /opt/scs-deploysystem/generated/scs/demos/helloworld/HelloPOA.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+
+servicesidl.check:
+
+coreidl.check:
+
+idl-core:
+
+idl-services:
+
+jar-servicesidl:
+
+build-hello:
+    [javac] Compiling 4 source files to /opt/scs-deploysystem/classes
+
+jar-hello:
+      [jar] Building jar: /opt/scs-deploysystem/src/java/scs/demos/helloworld/jar/helloworld.jar
+
+BUILD SUCCESSFUL
+Total time: 6 seconds
+Updating manifest for /tmp/luarocksrepository/rocks
+No existing manifest. Attempting to rebuild...
+  adding: conf/ (stored 0%)
+  adding: conf/hello.template (deflated 57%)
+  adding: conf/hello.java.all.desc (deflated 54%)
+  adding: hello-1.0-0.rockspec (deflated 41%)
+  adding: jar/ (stored 0%)
+  adding: jar/helloworld.jar (deflated 17%)
+  [SCS VERBOSE] Packager::create_from_dir : Loading the implementation descriptions from the directory: /opt/scs-deploysystem/src/java/scs/demos/helloworld//conf
+  [SCS VERBOSE] Packager::create_from_dir : Implementation description loaded successfully.
+  [SCS VERBOSE] Packager::create_from_dir : Template description loaded successfully.
+  [SCS VERBOSE] Packager::create_from_dir : New binary rock created '/opt/scs-deploysystem/src/lua/scs/demos/deployer/hello-1.0-0.all.rock'
+Checking stability of dependencies on the absence of
+hello 1.0-0...
+
+Removing hello 1.0-0...
+  [SCS VERBOSE] Packager::list_temp_repository : Searching for packages in the repository       /tmp/luarocksrepository
+  [SCS VERBOSE] Packager::create_from_dir : Other packages installed during the packaging procedure 
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for publish_pkg
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:publish_pkg({ --[[table:RC]]
+                info = { --[[table:SC]] ... },
+                file = "PK\
+[start: codigo alien]
+  [DEPLOY VERBOSE]      Trying upload the component:    Hello-1.0-0     java    all
+[proxies]     call to upload({ --[[table:RC]]
+                info = { --[[table:SC]] ... },
+                file = "PK\
+[end:   codigo alien]
+
+              }, "Automatically uploaded by Deployer just in deploy time!")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'upload'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]      Uploaded in ComponentRepository the component 'Hello-1.0-0' for 'java' and 'all' sucessfully!
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message nil
+[message]       got message nil
+*************
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for create_plan
+[dispatcher]  dispatching operation Deployer_1:create_plan()
+[dispatcher]  object { --[[table:TC]]
+                nickname = "Deployer_1.Plan_2",
+                all_nodes_servants = { --[[table:UC]] },
+                all_nodes = { --[[table:VC]] },
+                usage_info = { --[[table:WC]] ... },
+                all_containers = { --[[table:XC]] },
+                all_repositories = { --[[table:YC]] },
+                all_hosts_servants = { --[[table:ZC]] },
+                all_components_servants = { --[[table:AD]] },
+                admin = false,
+                manager = { --[[table:A]] ... },
+                all_containers_servants = { --[[table:BD]] },
+                all_components = { --[[table:CD]] },
+                all_repositories_servants = { --[[table:DD]] },
+              } registered with key Deployer_1.Plan_2
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+[listen]      get request from channel
+[message]       receive message
+[listen]      get request from channel
+[message]       receive message
+[listen]        get channel with config { --[[table:G]]
+                  ServantIndexer = { --[[table:H]] ... },
+                  ClientChannels = { --[[table:I]] ... },
+                  host = "*",
+                  port = 2500,
+                  ProxyIndexer = { --[[table:J]] ... },
+                  ServerChannels = { --[[table:K]] ... },
+                  ObjectReferrer = { --[[table:L]] ... },
+                  types = { --[[table:M]] ... },
+                  RequestListener = { --[[table:N]] ... },
+                  IIOPProfiler = { --[[table:O]] ... },
+                  OperationInvoker = { --[[table:P]] ... },
+                  RequestReceiver = { --[[table:Q]] ... },
+                  BasicSystem = { --[[table:R]] ... },
+                  ObjectProxies = { --[[table:S]] ... },
+                  flavor = "corba;typed;cooperative;base",
+                  ServerBroker = { --[[table:T]] ... },
+                  RequestDispatcher = { --[[table:U]] ... },
+                  ValueEncoder = { --[[table:V]] ... },
+                  ClientBroker = { --[[table:W]] ... },
+                  TypeRepository = { --[[table:X]] ... },
+                  OperationRequester = { --[[table:Y]] ... },
+                  tcpoptions = { --[[table:Z]] ... },
+                  MessageMarshaler = { --[[table:AB]] ... },
+                }
+[message]       got message Request
+[listen]        got request 1 for get_nickname
+[dispatcher]  dispatching operation Deployer_1.Plan_2:get_nickname()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for create_component
+[dispatcher]  dispatching operation Deployer_1.Plan_2:create_component()
+[dispatcher]  object { --[[table:ED]]
+                deployed = false,
+                connections = { --[[table:FD]] },
+                description = false,
+                deploying_connections = false,
+                properties = { --[[table:GD]] },
+                plan = { --[[table:TC]] ... },
+                nickname = "Deployer_1.Plan_2.ComponentEntity_1",
+                deployed_connections = { --[[table:HD]] },
+                args = false,
+                handle = false,
+                proxies = { --[[table:ID]] },
+                all_connections = { --[[table:JD]] },
+                container = false,
+              } registered with key Deployer_1.Plan_2.ComponentEntity_1
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for set_id
+[dispatcher]  dispatching operation Deployer_1.Plan_2.ComponentEntity_1:set_id({ --[[table:KD]]
+                patch_version = 0,
+                name = "Hello",
+                major_version = 1,
+                minor_version = 0,
+              })
+  [DEPLOY VERBOSE] DEBUG:       Testing the reference persisted for the repository 127.0.0.1:10001
+[proxies]     new proxy to { --[[table:LD]]
+                type_id = "IDL:scs/deployer/RepositoryEntity:1.0",
+                profiles = { --[[table:MD]] ... },
+              }
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for _non_existent
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:_non_existent()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to get_desc({ --[[table:KD]]
+                patch_version = 0,
+                name = "Hello",
+                major_version = 1,
+                minor_version = 0,
+              })
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'get_desc'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for get_desc
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:get_desc({ --[[table:ND]]
+                patch_version = 0,
+                name = "Hello",
+                major_version = 1,
+                minor_version = 0,
+              })
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message Request
+[listen]        got request 1 for set_args
+[dispatcher]  dispatching operation Deployer_1.Plan_2.ComponentEntity_1:set_args({ --[[table:OD]]
+                1 "World (from deployment script)",
+                n = 1,
+              })
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for deploy
+[dispatcher]  dispatching operation Deployer_1.Plan_2:deploy()
+  [DEPLOY VERBOSE] Deploying:   Deployer_1.Plan_2.ComponentEntity_1     Hello-1.0-0
+  [DEPLOY VERBOSE] INFO:        Searching all available implementation for Deployer_1.Plan_2.ComponentEntity_1
+  [DEPLOY VERBOSE] DEBUG:       Testing the reference persisted for the repository 127.0.0.1:10001
+[proxies]     new proxy to { --[[table:PD]]
+                type_id = "IDL:scs/deployer/RepositoryEntity:1.0",
+                profiles = { --[[table:QD]] ... },
+              }
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]       got message Request
+[listen]        got request 1 for _non_existent
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:_non_existent()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to search_byid({ --[[table:RD]]
+                patch_version = 0,
+                name = "Hello",
+                major_version = 1,
+                minor_version = 0,
+              })
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'search_byid'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for search_byid
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:search_byid({ --[[table:SD]]
+                patch_version = 0,
+                name = "Hello",
+                major_version = 1,
+                minor_version = 0,
+              })
+  [DEPLOY VERBOSE] INFO:        Retrieving the component description from the Repository already deployed
+[proxies]     call to searchById({ --[[table:SD]]
+                patch_version = 0,
+                name = "Hello",
+                major_version = 1,
+                minor_version = 0,
+              })
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'searchById'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE] DEBUG:       Obtaining the implementations available for the component Hello-1.0-0
+  [DEPLOY VERBOSE] DEBUG:       It will decide automatically about the container details!
+ ----------------- AUTOFIT_CONTAINER    table: 0x857a7e8
+  [DEPLOY VERBOSE] DEBUG:       Refreshing the 'containers' list order.
+  [DEPLOY VERBOSE] DEBUG:       First is: none, thereisn't containers yet!
+[dispatcher]  object { --[[table:TD]]
+                deployed = false,
+                connections = { --[[table:UD]] ... },
+                description = { --[[table:VD]] ... },
+                deploying_connections = false,
+                properties = { --[[table:WD]] ... },
+                id = { --[[table:XD]] ... },
+                monitoring = { --[[table:YD]] ... },
+                plan = { --[[table:TC]] ... },
+                all_connections = { --[[table:ZD]] ... },
+                deployed_connections = { --[[table:AE]] },
+                args = false,
+                handle = false,
+                proxies = { --[[table:BE]] ... },
+                node = false,
+                nickname = "Deployer_1.Plan_2.ContainerEntity_1",
+              } registered with key Deployer_1.Plan_2.ContainerEntity_1
+ ----------------- AUTOFIT_EXNODE       table: 0x857a7e8        lua     all
+  [DEPLOY VERBOSE] DEBUG:       Refreshing the 'nodes' list order.
+  [DEPLOY VERBOSE] DEBUG:       First is: none, thereisn't nodes yet!
+[dispatcher]  object { --[[table:CE]]
+                deployed = false,
+                connections = { --[[table:DE]] ... },
+                description = { --[[table:EE]] ... },
+                deploying_connections = false,
+                properties = { --[[table:FE]] ... },
+                id = { --[[table:GE]] ... },
+                plan = { --[[table:TC]] ... },
+                host = false,
+                deployed_connections = { --[[table:HE]] },
+                args = false,
+                handle = false,
+                proxies = { --[[table:IE]] ... },
+                all_connections = { --[[table:JE]] ... },
+                nickname = "Deployer_1.Plan_2.ExecutionNodeEntity_1",
+              } registered with key Deployer_1.Plan_2.ExecutionNodeEntity_1
+ ----------------- AUTOFIT_HOST table: 0x857a7e8        lua     all
+  [DEPLOY VERBOSE] DEBUG:       Refreshing the 'hosts' list order.
+  [DEPLOY VERBOSE] DEBUG:       First is: machine0
+  [DEPLOY VERBOSE] DEBUG:       Updating the usage statistics hosts nick=machine0 has 1
+  [DEPLOY VERBOSE] DEBUG:       Updating the usage statistics nodes nick=Deployer_1.Plan_2.ExecutionNodeEntity_1 has 1
+  [DEPLOY VERBOSE] DEBUG:       Updating the usage statistics containers nick=Deployer_1.Plan_2.ContainerEntity_1 has 1
+[proxies]     new proxy to { --[[table:KE]]
+                type_id = "",
+                profiles = { --[[table:LE]] ... },
+              }
+  [DEPLOY VERBOSE] INFO:        Testing if the ExecutionNode is running (corbaloc::127.0.0.1:10000/ExecutionNode)
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+  [DEPLOY VERBOSE] DEBUG:       ExecutionNode not running so starting up the repository daemon remotely through the SSH protocol.
+edward@127.0.0.1's password: 
+[proxies]     new proxy to { --[[table:ME]]
+                type_id = "",
+                profiles = { --[[table:NE]] ... },
+              }
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to getFacetByName("IReceptacles")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:OE]]
+                      type_id = "IDL:scs/core/IReceptacles:1.0",
+                      profiles = { --[[table:PE]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:OE]]
+                type_id = "IDL:scs/core/IReceptacles:1.0",
+                profiles = { --[[table:PE]] ... },
+              }
+[proxies]     call to getFacetByName("IMetaInterface")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:QE]]
+                      type_id = "IDL:scs/core/IMetaInterface:1.0",
+                      profiles = { --[[table:RE]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:QE]]
+                type_id = "IDL:scs/core/IMetaInterface:1.0",
+                profiles = { --[[table:RE]] ... },
+              }
+[proxies]     call to getFacetByName("ExecutionNode")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:SE]]
+                      type_id = "IDL:scs/execution_node/ExecutionNode:1.0",
+                      profiles = { --[[table:TE]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:SE]]
+                type_id = "IDL:scs/execution_node/ExecutionNode:1.0",
+                profiles = { --[[table:TE]] ... },
+              }
+[proxies]     call to getFacetByName("Installer")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:UE]]
+                      type_id = "IDL:scs/execution_node/Installer:1.0",
+                      profiles = { --[[table:VE]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:UE]]
+                type_id = "IDL:scs/execution_node/Installer:1.0",
+                profiles = { --[[table:VE]] ... },
+              }
+[proxies]     call to getFacetByName("ContainerManager")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:WE]]
+                      type_id = "IDL:scs/execution_node/ContainerManager:1.0",
+                      profiles = { --[[table:XE]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:WE]]
+                type_id = "IDL:scs/execution_node/ContainerManager:1.0",
+                profiles = { --[[table:XE]] ... },
+              }
+[proxies]     call to startup()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'startup'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE] INFO: Trying deploy the repositories connected to this ExecutionNode...
+  [DEPLOY VERBOSE] DEBUG:       Testing the reference persisted for the repository 127.0.0.1:10001
+[proxies]     new proxy to { --[[table:YE]]
+                type_id = "IDL:scs/deployer/RepositoryEntity:1.0",
+                profiles = { --[[table:ZE]] ... },
+              }
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for _non_existent
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:_non_existent()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to get_nickname()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'get_nickname'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for get_nickname
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:get_nickname()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to get_description()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'get_description'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for get_description
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:get_description()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to get_description()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'get_description'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for get_description
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:get_description()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]      New planned connection between 'Deployer_1.Plan_2.ExecutionNodeEntity_1' and the endpoint 'Deployer_1.Plan_1.RepositoryEntity_1' as known as: name = ComponentRepository version = 1.0-0
+[proxies]     call to get_nickname()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'get_nickname'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for get_nickname
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:get_nickname()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]      Including the entity as repository 'Deployer_1.Plan_1.RepositoryEntity_1'
+[proxies]     call to deploy()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'deploy'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for deploy
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:deploy()
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got exception { --[[table:AF]]
+                  1 "IDL:scs/deployer/AlreadyDeployed:1.0",
+                }
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got reply with exception for 1
+[mutex]       releasing receive lock
+[proxies]     new proxy to { --[[table:OE]]
+                type_id = "IDL:scs/core/IReceptacles:1.0",
+                profiles = { --[[table:PE]] ... },
+              }
+[proxies]     call to get_facet("ComponentRepository")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'get_facet'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]       got message Request
+[listen]        got request 1 for get_facet
+[dispatcher]  dispatching operation Deployer_1.Plan_1.RepositoryEntity_1:get_facet("ComponentRepository")
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:BF]]
+                      type_id = "IDL:scs/repository/ComponentRepository:1.0",
+                      profiles = { --[[table:CF]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     call to connect("ComponentRepository", { --[[table:DF]]
+                __reference = { --[[table:BF]] ... },
+                __deferred = { --[[table:EF]] ... },
+                __try = { --[[table:FF]] ... },
+              })
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'connect'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]      ExecutionNodeEntity deployed!
+  [DEPLOY VERBOSE] Planned properties:  language        lua
+[proxies]     new proxy to { --[[table:SE]]
+                type_id = "IDL:scs/execution_node/ExecutionNode:1.0",
+                profiles = { --[[table:TE]] ... },
+              }
+[proxies]     call to startContainer("Deployer_1.Plan_2.ContainerEntity_1", { --[[table:GF]]
+                1 { --[[table:HF]] ... },
+              })
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'startContainer'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:IF]]
+                      type_id = "IDL:scs/core/IComponent:1.0",
+                      profiles = { --[[table:JF]] ... },
+                    }
+[proxies]     call to getFacetByName("IReceptacles")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:KF]]
+                      type_id = "IDL:scs/core/IReceptacles:1.0",
+                      profiles = { --[[table:LF]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:KF]]
+                type_id = "IDL:scs/core/IReceptacles:1.0",
+                profiles = { --[[table:LF]] ... },
+              }
+[proxies]     call to getFacetByName("IMetaInterface")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:MF]]
+                      type_id = "IDL:scs/core/IMetaInterface:1.0",
+                      profiles = { --[[table:NF]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:MF]]
+                type_id = "IDL:scs/core/IMetaInterface:1.0",
+                profiles = { --[[table:NF]] ... },
+              }
+[proxies]     call to startup()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'startup'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[proxies]     call to getFacetByName("ComponentLoader")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:OF]]
+                      type_id = "IDL:scs/container/ComponentLoader:1.0",
+                      profiles = { --[[table:PF]] ... },
+                    }
+[mutex]         releasing receive lock
+[proxies]     new proxy to { --[[table:OF]]
+                type_id = "IDL:scs/container/ComponentLoader:1.0",
+                profiles = { --[[table:PF]] ... },
+              }
+  [DEPLOY VERBOSE]      ContainerEntity deployed!
+[proxies]     new proxy to { --[[table:OF]]
+                type_id = "IDL:scs/container/ComponentLoader:1.0",
+                profiles = { --[[table:PF]] ... },
+              }
+[proxies]     call to load({ --[[table:RD]]
+                patch_version = 0,
+                name = "Hello",
+                major_version = 1,
+                minor_version = 0,
+              }, { --[[table:OD]]
+                1 "World (from deployment script)",
+                n = 1,
+              })
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'load'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:QF]]
+                      type_id = "IDL:scs/core/IComponent:1.0",
+                      profiles = { --[[table:RF]] ... },
+                    }
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]      ComponentEntity deployed!
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message Request
+[listen]        got request 1 for activate
+[dispatcher]  dispatching operation Deployer_1.Plan_2:activate()
+  [DEPLOY VERBOSE] Activating:  Deployer_1.Plan_2.ComponentEntity_1     Hello-1.0-0
+[proxies]     call to startup()
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[invoke]          [IOR profile with tag 0]
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'startup'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message Request
+[listen]        got request 1 for get_facet
+[dispatcher]  dispatching operation Deployer_1.Plan_2.ComponentEntity_1:get_facet("Hello")
+[proxies]     call to getFacetByName("Hello")
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation 'getFacetByName'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[proxies]           new proxy to { --[[table:SF]]
+                      type_id = "IDL:scs/demos/helloworld/Hello:1.0",
+                      profiles = { --[[table:TF]] ... },
+                    }
+[mutex]         releasing receive lock
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message Request
+[listen]        got request 1 for undeploy
+[dispatcher]  dispatching operation Deployer_1.Plan_2:undeploy()
+  [DEPLOY VERBOSE] Undeploying: Deployer_1.Plan_2.ComponentEntity_1     Hello-1.0-0
+  [DEPLOY VERBOSE] Testing still deployed: Deployer_1.Plan_2.ContainerEntity_1 proxy to the facet: IComponent
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[listen]      get request from channel
+[message]       receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]    the CORBA proxy IComponent is outdated!
+  [DEPLOY VERBOSE] Testing still deployed: Deployer_1.Plan_2.ComponentEntity_1 proxy to the facet: IComponent
+[invoke]      invoke remote operation
+[invoke]        get communication channel
+[mutex]         channel free for sending
+[invoke]        request 1 for operation '_non_existent'
+[message]         send message Request
+[mutex]         releasing send lock
+[invoke]      get reply
+[mutex]         channel free for receiving
+[invoke]        get a reply from communication channel
+[message]         receive message
+[message]         got message Reply
+[invoke]          got successful reply for request 1
+[mutex]         releasing receive lock
+  [DEPLOY VERBOSE]    the CORBA proxy IComponent is outdated!
+  [DEPLOY VERBOSE]      Undeploy of the entity Deployer_1.Plan_2.ComponentEntity_1 has finished successfully.
+[mutex]       channel free for sending
+[listen]      got reply for request 1
+[listen]        got successful results
+[message]       send message Reply
+[mutex]       releasing send lock
+[message]       got message nil
+[message]       got message nil
+---------- END

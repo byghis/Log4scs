@@ -1,0 +1,28 @@
+SCS::Utils::ReadProperties : Line: #accessControlServerHostName = localhost
+SCS::Utils::ReadProperties : Line: #accessControlServerHostPort = 2089
+SCS::Utils::ReadProperties : Line: #privateKeyFile = /home/user/mestrado/svn/openbus/trunk/certificates/ComponentContainer.key
+SCS::Utils::ReadProperties : Line: #accessControlServiceCertificateFile = /home/user/mestrado/svn/openbus/trunk/certificates/AccessControlService.crt
+SCS::Utils::ReadProperties : Line: #path = ../../scs
+SCS::Utils::ReadProperties : Line: #interception = intercepted;corba;typed;cooperative;base
+SCS::Utils::ReadProperties : Line: oilverbose = 3
+ComponentContainer: New instance created under name: Deployer_1.Plan_2.ContainerEntity_1 in a platform: linux-x86_64
+Setting LUA_PATH based on ExecutionNode:Installer:getEnvVars('lua') data!
+Utils::UpdateConfig : called with 
+Utils::UpdateConfig : loading manifest
+ERROR: Unable to update the manifest, more.. Failed loading manifest for /opt/scs-deploysystem/src/lua/scs/execution_node/../container/lua/linux-x86_64/rocks
+ComponentContainer::IComponent::Startup
+ComponentContainer::IComponent::Startup : Finished.
+ComponentContainer::ComponentLoader::Load
+ComponentContainer::ComponentLoader::Load : Testing if the component Hello-1.0-0 is present...
+Utils::UpdateConfig : called with 
+Utils::UpdateConfig : loading manifest
+Utils::UpdateConfig : changing to the dir: /opt/scs-deploysystem/src/lua/scs/execution_node/../container/lua/linux-x86_64/rocks
+ComponentContainer::ComponentLoader::Load : Testing if the component Hello-1.0-0 is already loaded...
+ComponentContainer::ComponentLoader::Load : Loading LUA component Hello-1.0-0/scs.demos.hello.HelloFactory
+ComponentContainer::ComponentLoader::Load : Trying to create an instance.
+ComponentContainer::ComponentLoader::Load : Chaning directory for 
+ComponentContainer::ComponentLoader::Load : Back to old directory 
+ComponentContainer::ComponentLoader::Load : Instance created.
+ComponentContainer::ComponentLoader::Load : Creating handle...
+ComponentContainer::ComponentLoader::Load : New instance id is 1.
+ComponentContainer::ComponentLoader::Load : Finished.

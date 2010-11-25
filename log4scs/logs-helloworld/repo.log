@@ -1,0 +1,10 @@
+  [ DEBUG ] Hostname =	127.0.0.1
+  [ DEBUG ] Port =	10001
+  [SCS VERBOSE]	SCS::Utils::ReadProperties : Line: initfile = ComponentRepositoryInit.lua
+  [SCS VERBOSE]	SCS::Utils::ReadProperties : Line: use_openbus = false
+  [SCS VERBOSE]	SCS::Utils::ReadProperties : Line: accessControlServerHostName = localhost
+  [SCS VERBOSE]	SCS::Utils::ReadProperties : Line: accessControlServerHostPort = 2089
+  [SCS VERBOSE]	SCS::Utils::ReadProperties : Line: privateKeyFile = /home/user/mestrado/svn/openbus/trunk/certificates/ComponentRepository.key
+  [SCS VERBOSE]	SCS::Utils::ReadProperties : Line: accessControlServiceCertificateFile = /home/user/mestrado/svn/openbus/trunk/certificates/AccessControlService.crt
+  [SCS VERBOSE]	SCS::Utils::ReadProperties : Line: pkgdir = ../repository/packages/
+  [SCS VERBOSE]	ComponentRepository::IComponent::Startup

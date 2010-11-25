@@ -1,0 +1,31 @@
+edward@jaku:/opt/scs-deploysystem/src/lua/scs/demos/deployer$ ./rundemo launch-repository.lua 
+ATTENTION: Using the SCS_HOME system variable as /opt/scs-deploysystem
+[info] creating a plan to deploy the ComponentRepository
+[info] repository planned:      Deployer_1.Plan_1.RepositoryEntity_1
+[info] repository deployed!
+[info] waiting for 2 seconds...
+[info] repository is activated!
+[info] repository is running!
+[info] 'purgeallplans.lua' will show you how to undeploy a repository.
+[info] finished successfuly.
+edward@jaku:/opt/scs-deploysystem/src/lua/scs/demos/deployer$ ./rundemo hello-packaging.lua 
+ATTENTION: Using the SCS_HOME system variable as /opt/scs-deploysystem
+[info] Packager has local access to the sources,
+[info] so we will use Packager.create_from_dir during the packaging.
+[info] Generating the package for the Lua version of the Hello.
+[info] The package of the Hello component (lua version) was published.
+[info] The template (logical descriptions) of the Hello component was published.
+[info] Generating the package for the Java version of the Hello also.
+[info] The package of the Hello component (java version) was published.
+edward@jaku:/opt/scs-deploysystem/src/lua/scs/demos/deployer$ ./rundemo hello-de
+ployment.lua 
+ATTENTION: Using the SCS_HOME system variable as /opt/scs-deploysystem
+[info] plan created with id='Deployer_1.Plan_2'
+[info] Hello component was deployed!
+[info] plan activated!
+[info] user application actions is starting!
+i[info] Hello component prints a message 'sayHello' in the screen of its parent p rocess (in case = container, the container prints out in the file: src/lua/scs/execution_node/STDOUT-<containername>.log)
+[info] user application actions finished!
+[info] deactivating the deployment plan!
+[info] finished successfuly.
+

@@ -1,0 +1,31 @@
+
+-----------------------------------------------------
+Thu Nov 25 10:04:35 2010 1290686675
+SCS::Utils::ReadProperties : Line: initfile = ComponentRepositoryInit.lua
+SCS::Utils::ReadProperties : Line: use_openbus = false
+SCS::Utils::ReadProperties : Line: accessControlServerHostName = localhost
+SCS::Utils::ReadProperties : Line: accessControlServerHostPort = 2089
+SCS::Utils::ReadProperties : Line: privateKeyFile = /home/user/mestrado/svn/openbus/trunk/certificates/ComponentRepository.key
+SCS::Utils::ReadProperties : Line: accessControlServiceCertificateFile = /home/user/mestrado/svn/openbus/trunk/certificates/AccessControlService.crt
+SCS::Utils::ReadProperties : Line: pkgdir = ../repository/packages/
+ComponentRepository::IComponent::Startup
+ComponentRepository::IComponent::Startup : Executing init file ComponentRepositoryInit.lua...
+ComponentRepository::IComponent::Startup : Finished.
+ComponentRepository::IComponent::Startup
+ComponentRepository::IComponent::Startup : This repository is already started. Done nothing.
+ComponentRepository::IComponent::Startup
+ComponentRepository::IComponent::Startup : This repository is already started. Done nothing.
+ComponentRepository::ComponentRepository::Upload
+ComponentRepository::ComponentRepository::Upload : Component 'lua/Hello-1.0-0.all' uploaded.
+ComponentRepository::ComponentRepository::Upload : Finished.
+ComponentRepository::ComponentRepository::Upload
+ComponentRepository::ComponentRepository::Upload : Component 'java/Hello-1.0-0.all' uploaded.
+ComponentRepository::ComponentRepository::Upload : Finished.
+ComponentRepository::ComponentRepository::SearchByID
+ComponentRepository::ComponentRepository::SearchByID : Found lua/Hello-1.0-0.all
+ComponentRepository::ComponentRepository::SearchByID : Found java/Hello-1.0-0.all
+ComponentRepository::ComponentRepository::SearchByID : List of descriptions provided (n=2). Finished.
+ComponentRepository::ComponentRepository::Download
+ComponentRepository::ComponentRepository::Download : Component is not uploaded. Launching exception...
+ComponentRepository::ComponentRepository::Download
+ComponentRepository::ComponentRepository::Download : Component provided. Finished.

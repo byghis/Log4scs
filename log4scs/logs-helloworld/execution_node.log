@@ -1,0 +1,88 @@
+
+-----------------------------------------------------
+Thu Nov 25 10:17:56 2010 1290687476
+Dumping the IOR in the file: /tmp/execution_node.ior
+ExecutionNode::IComponent::Startup
+ExecutionNode::IComponent::Startup : ensuring that exists containerPath property...
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+ExecutionNode::IComponent::Startup : Finished.
+ExecutionNode::ExecutionNode::StartContainer
+ExecutionNode::ExecutionNode::StartContainer : Name is Deployer_1.Plan_2.ContainerEntity_1.
+ExecutionNode::ExecutionNode::StartContainer : Testing if container is running...
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::ExecutionNode::StartContainer : False.
+ExecutionNode::ExecutionNode::StartContainer : Creating new container process and waiting for it to register...
+ExecutionNode::ExecutionNode::StartContainer : Container type is Lua and platform is linux-x86_64.
+ExecutionNode::ExecutionNode::StartContainer : Calling the command lua  -lluarocks.require  ../container/ContainerApp.lua /tmp/execution_node.ior Deployer_1.Plan_2.ContainerEntity_1  >STDOUT-Deployer_1.Plan_2.ContainerEntity_1.log 2>STDERR-Deployer_1.Plan_2.ContainerEntity_1.log -L ComponentContainerInit.lua
+ExecutionNode::ExecutionNode::StartContainer : Creating new unix process in background...
+ExecutionNode::ExecutionNode::StartContainer : Waiting 1 second for container Deployer_1.Plan_2.ContainerEntity_1 to register. Times: 1.
+ExecutionNode::ExecutionNode::StartContainer : Waiting 1 second for container Deployer_1.Plan_2.ContainerEntity_1 to register. Times: 2.
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+ExecutionNode::ContainerManager::RegisterContainer
+ExecutionNode::ContainerManager::RegisterContainer : Testing if name is nil or container already exists...
+ExecutionNode::ContainerManager::RegisterContainer : False. Proceeding to register container...
+ExecutionNode::ContainerManager::RegisterContainer : Container Deployer_1.Plan_2.ContainerEntity_1 registered and persisted. Finished.
+ExecutionNode::ExecutionNode::StartContainer : Container created and registered!
+ExecutionNode::ExecutionNode::StartContainer : Finished.
+ExecutionNode::Installer::Install
+ExecutionNode::Installer::Install : Component name 'Hello' language 'lua'
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::Install : Testing if the component Hello-1.0-0 is already installed to lua/linux-x86_64
+ExecutionNode::Installer::Install : Fetching...
+ExecutionNode::Installer::Install : Fetch Finished
+ExecutionNode::Installer::Install : Unpacking...
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+Utils::UpdateConfig : called with 
+Utils::UpdateConfig : loading manifest
+ERROR: Unable to update the manifest, more.. Failed loading manifest for /opt/scs-deploysystem/src/lua/scs/execution_node/../container/lua/linux-x86_64/rocks
+ExecutionNode::Installer::Install : luarocks.install Finished
+ExecutionNode::Installer::Install : Unpack Finished
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+ExecutionNode::Installer::Install : Finished
+ExecutionNode::Installer::GetDescription
+ExecutionNode::Installer::GetDescription : Hello lua
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
+ExecutionNode::Installer::GetRootPath
+ExecutionNode::ExecutionNode::getPlatform
+ExecutionNode::ExecutionNode::getPlatform is linux-x86_64
+ExecutionNode::ExecutionNode::getPlatform : Finished.
+ExecutionNode::Installer::GetRootPath : Finished
